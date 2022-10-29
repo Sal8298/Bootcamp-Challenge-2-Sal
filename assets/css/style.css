@@ -26,17 +26,20 @@ ul li {
     list-style: none;
     display: inline-block;
     padding: 5px;
+    color: tomato;
 }
 
-#sub {
-    font-size: 40px;
+ul li a {
+    color: tomato;
+}
+
+#hero {
     color: goldenrod;
-    background-color: aqua;
     display: flex;
     justify-content: center;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
+    border-right: 1px solid black;
+    padding: 4px;
+    margin: 5px;
 }
 
 #about {
@@ -48,14 +51,35 @@ ul li {
     flex-wrap: wrap;
 }
 
+aside {
+    border: 5px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: larger;
+    width:fit-content;
+    padding: 10px;
+}
+
 section {
     border: 5px solid black;
-    padding: 15px;
+    /* padding: 15px; */
     margin: 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+#heading {
+    border: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: xx-large;
+    border-bottom: 1px solid black;
+}
+
+h2 {
+    color: tomato;
 }
 
 div {
@@ -65,33 +89,25 @@ div {
 }
 
 .work {
+    display: flex;
     flex: 1 0 400px;
 }
-
-/* main {
-    /* float: right;
-} */
-
-aside {
-    float: left;
-    border: 5px solid black;
-}
-
-/* h3 {
-    padding-top: 50px;
-} */
 
 footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border-top: 1px solid black;
+    margin-top: 10px;
 }
 
-h4 {
+h5 {
     font-size: larger;
 }
 
-/* #img0 {
+/* Having trouble with a full page background
+
+#img0 {
     background-image: url("/assets/images/star-wars-death-star-at-at-space-wallpaper-preview.jpeg");
     background-color: #cccccc;
     height: 100vh;
@@ -101,56 +117,20 @@ h4 {
     z-index: -10;
   } */
 
-#img1 {
-    background-image: url("/assets/images/Bat\ Signal.jpeg"); /* The image used */
+.img1 {
+    background-image: url("/assets/images/399-3999624_star-wars-pixel-art-hd-png-download.png"); /* The image used */
     background-color: #cccccc; /* Used if the image is unavailable */
-    height: 300px; /* You must set a specified height */
+    height: 400px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
   }
 
   #img2 {
-    background-image: url("/assets/images/399-3999624_star-wars-pixel-art-hd-png-download.png");
+    background-image: url("/assets/images/Sal1.jpg");
     background-color: #cccccc;
-    height: 300px;
+    height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-  #img3 {
-    background-image: url("/assets/images/Dungeon\ Zoom.jpeg");
-    background-color: #cccccc;
-    height: 300px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  #img4 {
-    background-image: url("/assets/images/Halo\ Ring.webp");
-    background-color: #cccccc;
-    height: 300px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  #img5 {
-    background-image: url("/assets/images/Star\ wars\ X-wing.jpg");
-    background-color: #cccccc;
-    height: 300px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  #img6 {
-    background-image: url("/assets/images/Star-Wars-Space-Background.jpeg");
-    background-color: #cccccc;
-    height: 300px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  } 
