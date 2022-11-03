@@ -1,3 +1,4 @@
+/* Allows to repetitive variables to make maintaince eaiser */
 :root {
     --color: tomato;
     --color2: goldenrod;
@@ -51,7 +52,7 @@ ul li a:hover {
 }
 
 #aboutMe {
-    /* makes border appear with black color */
+    /* makes border appear with specifed color */
     border: 1px solid var(--color3);
     padding: var(--padding);
     margin: 10px;
@@ -69,9 +70,6 @@ section {
     border: 5px solid var(--color3);
     margin: 15px;
     padding: var(--padding);
-    display: var(--display);
-    flex-direction: row;
-    flex-wrap: var(--flex-wrap);
     justify-content: center;
 }
 
@@ -88,10 +86,12 @@ h3 {
 #hero {
     color: var(--color2);
     display: var(--display);
-    justify-content: center;
-    border: var(--background-color);
-    flex-grow: 1;
-    flex-shrink: 1;
+    border: 5px solid var(--color3);
+    background-image: url("../images/avatar.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 h2 {
@@ -162,6 +162,7 @@ footer {
     display: var(--display);
     flex-wrap: var(--flex-wrap);
     justify-content: center;
+    /* adds a sort of line seperator above footer. */
     border-top: 1px solid var(--color3);
     margin-top: 10px;
 }
@@ -179,10 +180,4 @@ h4 a:hover {
     background-color: var(--color2);
     transition-duration: 2s;
     transition-timing-function: ease-out;
-}
-
-@media screen and (max-width: 500px) {
-    #img0 {
-    width: 300px;
-    }
 }
