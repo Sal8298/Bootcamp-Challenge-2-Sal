@@ -1,3 +1,13 @@
+:root {
+    --color: tomato;
+    --color2: goldenrod;
+    --color3: black;
+    --background-color: bisque;
+    --padding: 10px;
+    --display: flex;
+    --flex-wrap: wrap;
+  }
+
 * {
      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
@@ -5,16 +15,16 @@
 body {
     box-sizing: border-box;
     margin: 0;
-    background-color:bisque;
+    background-color:var(--background-color);
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    color: tomato;
+    display: var(--display);
+    flex-wrap: var(--flex-wrap);
+    color: var(--color);
     justify-content: space-between;
-    border: 5px solid black;
-    padding: 10px;
+    border: 5px solid var(--color3);
+    padding: var(--padding);
     font-size: large;
 }
 
@@ -24,47 +34,101 @@ h1 {
 
 ul li {
     list-style: none;
+    /* Makes the nav links appear inline */
     display: inline-block;
     padding: 5px;
-    color: tomato;
 }
 
 ul li a {
-    color: tomato;
+    color: var(--color);
+}
+
+ul li a:hover {
+    background-color: var(--color2);
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+    
 }
 
 #aboutMe {
-    border: 1px solid black;
-    padding: 10px;
+    /* makes border appear with black color */
+    border: 1px solid var(--color3);
+    padding: var(--padding);
     margin: 10px;
     font-size: large;
-    display: flex;
-    flex-wrap: wrap;
+    display: var(--display);
+    flex-wrap: var(--flex-wrap);
 }
 
 #aboutMe h2 {
     font-size: 40px;
-    padding: 10px;
+    padding: var(--padding);
 }
 
 section {
-    border: 5px solid black;
+    border: 5px solid var(--color3);
     margin: 15px;
-    padding: 10px;
-    display: flex;
+    padding: var(--padding);
+    display: var(--display);
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: var(--flex-wrap);
     justify-content: center;
 }
 
 h3 {
-    padding: 10px;
-    color: tomato;
-    display: flex;
+    padding: var(--padding);
+    color: var(--color);
+    display: var(--display);
     width: fit-content;
     height: fit-content;
     position: relative;
     top: 250px;
+}
+
+#hero {
+    color: var(--color2);
+    display: var(--display);
+    justify-content: center;
+    border: var(--background-color);
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+h2 {
+    color: var(--color);
+}
+
+#myWork {
+    border: 5px;
+    display: var(--display);
+    flex-wrap: var(--flex-wrap);
+    font-size: 40px;
+    border-bottom: 1px solid var(--color3);
+    padding: 15px;
+}
+
+div {
+    display: var(--display);
+    flex-wrap: var(--flex-wrap);
+    justify-content: space-evenly;
+}
+
+#workMain {
+    display: var(--display);
+    flex: 1 1 1000px;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid var(--color3);
+    margin: 15px;
+    padding: var(--padding);
+    /* adds a background image. */
+    background-image: url("../images/Horiseon-Screenshot1.jpg");
+    height: 800px;
+    background-position: center;
+    /* prevents image repetion. */
+    background-repeat: no-repeat;
+    /* fills the blank space in the parent box. */
+    background-size: cover;
 }
 
 #workMain h3 {
@@ -72,51 +136,16 @@ h3 {
     left: 35px;
 }
 
-#hero {
-    color: goldenrod;
-    display: flex;
-    justify-content: center;
-    border: bisque;
-    flex-grow: 1;
-    flex-shrink: 1;
+#workMain:focus {
+    border: 5px solid var(--color2);
 }
 
-h2 {
-    color: tomato;
-}
-
-#myWork {
-    border: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 40px;
-    border-bottom: 1px solid black;
-    padding: 15px;
-}
-
-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-#workMain {
-    display: flex;
-    flex: 1 1 1000px;
-    flex-direction: column;
-    align-items: center;
-    border: 5px solid black;
-    margin: 15px;
-    padding: 10px;
-    background-image: url("../images/Horiseon-Screenshot1.jpg");
-    height: 800px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#workMain:hover {
+    border: 5px solid var(--color2);
 }
 
 .work {
-    display: flex;
+    display: var(--display);
     flex: 1 1 600px;
     background-image: url("../images/Work\ in\ Progress.Jpg");
     height: 400px;
@@ -125,17 +154,31 @@ div {
     background-size: cover;
 }
 
+.work:hover {
+    border: 5px solid var(--color2);
+}
+
 footer {
-    display: flex;
-    flex-wrap: wrap;
+    display: var(--display);
+    flex-wrap: var(--flex-wrap);
     justify-content: center;
-    border-top: 1px solid black;
+    border-top: 1px solid var(--color3);
     margin-top: 10px;
 }
 
 h4 {
     font-size: larger;
-    padding: 10px;
+    padding: var(--padding);
+}
+
+h4 a {
+    color: var(--color)
+}
+
+h4 a:hover {
+    background-color: var(--color2);
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
 }
 
 @media screen and (max-width: 500px) {
