@@ -14,16 +14,15 @@ Made a portfolio for Sal.
 
 ## Installation
 
- Sal's Portfolio at https://sal8298.github.io/Bootcamp-Challenge-1-Sal/
+ Sal's Portfolio at https://sal8298.github.io/Sal-Portfolio/
 
 Repository containing the code for Sal's Portfolio can be found at https://github.com/Sal8298/Sal-Portfolio
 
 ## Usage
-This is a screenshot of the top of the page.
-    ![Screenshot of top of the page](./assets/images/Horiseon-Screenshot1.jpg)
+This is a screenshot of the the page.
+    ![Screenshot of the page](./assets/images/_Users_salahuddin_Bootcamp-Stuff_Assignments_Bootcamp-Challenge-2-Sal_index.html.jpg)
 
-This a sceenshot of the bottom of the page.
-    ![ Screenshot of bottom of the page](./assets/images/Horiseon-Screenshot2.jpg)
+    Clicking the first image will take you to the deployed website. All other images are placeholders pending future updates.
 
 ## Credits
 
