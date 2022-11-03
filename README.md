@@ -20,6 +20,7 @@ Repository containing the code for Sal's Portfolio can be found at https://githu
 
 ## Usage
 This is a screenshot of the the page.
+
     ![Screenshot of the page](./assets/images/_Users_salahuddin_Bootcamp-Stuff_Assignments_Bootcamp-Challenge-2-Sal_index.html.jpg)
 
 - Clicking the first image in the work section will take you to the deployed website. All other images are placeholders pending future updates.
