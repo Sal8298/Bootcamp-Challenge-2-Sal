@@ -141,7 +141,7 @@ div {
 }
 
 #workMain h3 {
-    top: 650px;
+    top: 728px;
     left: 35px;
 }
 
@@ -194,7 +194,14 @@ h4 a:hover {
 
 @media screen and (max-width: 490px) {
     #workMain h3 {
-        top: 650px;
+        top: 728px;
+        left: -15px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    #workMain h3 {
+        top: 670px;
         left: -15px;
     }
 }
