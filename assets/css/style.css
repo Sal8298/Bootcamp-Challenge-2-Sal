@@ -51,15 +51,6 @@ ul li a {
     padding: 10px;
 }
 
-#hero {
-    color: goldenrod;
-    display: flex;
-    justify-content: center;
-    border: none;
-    padding: 4px;
-    margin: 5px;
-}
-
 section {
     border: 5px solid black;
     margin: 15px;
@@ -72,7 +63,17 @@ section {
 
 section h3 {
     padding: 10px;
-    
+    background-color: bisque;
+    color: aqua;
+}
+
+#hero {
+    color: goldenrod;
+    display: flex;
+    justify-content: center;
+    border: bisque;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 h2 {
@@ -94,16 +95,26 @@ div {
     justify-content: space-evenly;
 }
 
-.work {
-    display: flex;
-    flex: 1 0 400px;
-}
-
 .workMain {
     display: flex;
-    flex: 1 0 600px;
+    flex: 1 1 1000px;
     flex-direction: column;
     align-items: center;
+    background-image: url("../images/Horiseon-Screenshot1.jpg");
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.work {
+    display: flex;
+    flex: 1 1 600px;
+    background-image: url("../images/Work\ in\ Progress.Jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer {
@@ -114,52 +125,7 @@ footer {
     margin-top: 10px;
 }
 
-h5 {
+h4 {
     font-size: larger;
     padding: 10px;
 }
-
- /* Having trouble with a full page background */
-
-/* #img0 {
-    background-image: url("../images/star-wars-death-star-at-at-space-wallpaper-preview.jpeg");
-    background-color: #cccccc;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -10;
-  } */
-
-.img1 {
-    background-image: url("/assets/images/399-3999624_star-wars-pixel-art-hd-png-download.png"); /* The image used */
-    background-color: #cccccc; /* Used if the image is unavailable */
-    height: 400px; /* You must set a specified height */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-  }
-
-  #img1 {
-    background-image: url("/assets/images/399-3999624_star-wars-pixel-art-hd-png-download.png");
-    background-color: #cccccc;
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  #img2 {
-    background-image: url("/assets/images/Sal1.jpg");
-    background-color: #cccccc;
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  @media screen and (max-width: 1000px) {
-    section {
-        flex-direction: column;
-    }
-  }
