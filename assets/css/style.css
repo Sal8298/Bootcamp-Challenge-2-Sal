@@ -37,16 +37,7 @@ ul li a {
     color: tomato;
 }
 
-#hero {
-    color: goldenrod;
-    display: flex;
-    justify-content: center;
-    border-right: 1px solid black;
-    padding: 4px;
-    margin: 5px;
-}
-
-#about {
+#aboutMe {
     border: 1px solid black;
     padding: 10px;
     margin: 10px;
@@ -55,14 +46,24 @@ ul li a {
     flex-wrap: wrap;
 }
 
-#about h2 {
+#aboutMe h2 {
     font-size: 40px;
     padding: 10px;
+}
+
+#hero {
+    color: goldenrod;
+    display: flex;
+    justify-content: center;
+    border: none;
+    padding: 4px;
+    margin: 5px;
 }
 
 section {
     border: 5px solid black;
     margin: 15px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -78,7 +79,7 @@ h2 {
     color: tomato;
 }
 
-#heading {
+#myWork {
     border: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -118,10 +119,10 @@ h5 {
     padding: 10px;
 }
 
-/* Having trouble with a full page background
+ /* Having trouble with a full page background */
 
-#img0 {
-    background-image: url("/assets/images/star-wars-death-star-at-at-space-wallpaper-preview.jpeg");
+/* #img0 {
+    background-image: url("../images/star-wars-death-star-at-at-space-wallpaper-preview.jpeg");
     background-color: #cccccc;
     height: 100vh;
     background-position: center;
@@ -157,7 +158,7 @@ h5 {
     background-size: cover;
   }
 
-  @media screen and (max-width: 1000) {
+  @media screen and (max-width: 1000px) {
     section {
         flex-direction: column;
     }
