@@ -1,9 +1,11 @@
 /* Allows to repetitive variables to make maintaince eaiser */
 :root {
-    --color: tomato;
-    --color2: goldenrod;
+    --color: navy;
+    --color2: seagreen;
     --color3: black;
-    --background-color: bisque;
+    --color4: rgb(18, 222, 171);
+    --background-color: rgb(148, 172, 141);
+    --background-color2: rgb(159, 129, 158);
     --padding: 10px;
     --display: flex;
     --flex-wrap: wrap;
@@ -23,10 +25,15 @@ nav {
     display: var(--display);
     flex-wrap: var(--flex-wrap);
     color: var(--color);
+    background-color: var(--background-color2);
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
     border: 5px solid var(--color3);
     padding: var(--padding);
     font-size: large;
+    z-index: 10;
 }
 
 h1 {
@@ -51,11 +58,18 @@ ul li a:hover {
     
 }
 
+section {
+    border: 5px solid var(--color3);
+    margin: 15px;
+    padding: var(--padding);
+    justify-content: center;
+}
+
 #aboutMe {
     /* makes border appear with specifed color */
     border: 1px solid var(--color3);
     padding: var(--padding);
-    margin: 10px;
+    margin-top: 75px;
     font-size: large;
     display: var(--display);
     flex-wrap: var(--flex-wrap);
@@ -66,27 +80,22 @@ ul li a:hover {
     padding: var(--padding);
 }
 
-section {
-    border: 5px solid var(--color3);
-    margin: 15px;
-    padding: var(--padding);
-    justify-content: center;
-}
-
 h3 {
     padding: var(--padding);
-    color: var(--color);
+    color: var(--color4);
+    background-color:var(--background-color2);
     display: var(--display);
     width: fit-content;
     height: fit-content;
     position: relative;
-    top: 250px;
+    top: 328px;
 }
 
 #hero {
     color: var(--color2);
     display: var(--display);
     border: 5px solid var(--color3);
+    margin-top: 75px;
     background-image: url("../images/avatar.jpg");
     height: 600px;
     background-position: center;
@@ -147,7 +156,7 @@ div {
 .work {
     display: var(--display);
     flex: 1 1 600px;
-    background-image: url("../images/Work\ in\ Progress.Jpg");
+    background-image: url("../images/back.jpeg");
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
@@ -161,9 +170,10 @@ div {
 footer {
     display: var(--display);
     flex-wrap: var(--flex-wrap);
+    background-color: var(--background-color2);
     justify-content: center;
     /* adds a sort of line seperator above footer. */
-    border-top: 1px solid var(--color3);
+    border-top: 5px solid var(--color3);
     margin-top: 10px;
 }
 
@@ -180,4 +190,11 @@ h4 a:hover {
     background-color: var(--color2);
     transition-duration: 2s;
     transition-timing-function: ease-out;
+}
+
+@media screen and (max-width: 490px) {
+    #workMain h3 {
+        top: 650px;
+        left: -15px;
+    }
 }
