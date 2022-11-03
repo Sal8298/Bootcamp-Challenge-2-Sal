@@ -61,10 +61,19 @@ section {
     justify-content: center;
 }
 
-section h3 {
+h3 {
     padding: 10px;
-    background-color: bisque;
-    color: aqua;
+    color: tomato;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    top: 250px;
+}
+
+#workMain h3 {
+    top: 650px;
+    left: 35px;
 }
 
 #hero {
@@ -95,11 +104,14 @@ div {
     justify-content: space-evenly;
 }
 
-.workMain {
+#workMain {
     display: flex;
     flex: 1 1 1000px;
     flex-direction: column;
     align-items: center;
+    border: 5px solid black;
+    margin: 15px;
+    padding: 10px;
     background-image: url("../images/Horiseon-Screenshot1.jpg");
     height: 800px;
     background-position: center;
@@ -128,4 +140,10 @@ footer {
 h4 {
     font-size: larger;
     padding: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    #img0 {
+    width: 300px;
+    }
 }
