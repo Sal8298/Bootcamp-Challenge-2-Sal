@@ -96,7 +96,7 @@ h3 {
     display: var(--display);
     border: 5px solid var(--color3);
     margin-top: 75px;
-    background-image: url("../images/avatar.jpg");
+    background-image: url("../images/Sal1.jpg");
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
@@ -194,12 +194,12 @@ h4 a:hover {
 
 @media screen and (max-width: 490px) {
     #workMain h3 {
-        top: 728px;
+        top: 712px;
         left: -15px;
     }
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 295px) {
     #workMain h3 {
         top: 670px;
         left: -15px;
