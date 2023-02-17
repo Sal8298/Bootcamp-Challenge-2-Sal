@@ -163,6 +163,16 @@ div {
     background-size: cover;
 }
 
+#workPtwo {
+    display: var(--display);
+    flex: 1 1 600px;
+    background-image: url("../images/P2.jpeg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .work:hover {
     border: 5px solid var(--color2);
 }
