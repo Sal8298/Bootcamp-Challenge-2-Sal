@@ -131,7 +131,7 @@ div {
     margin: 15px;
     padding: var(--padding);
     /* adds a background image. */
-    background-image: url("../images/P2.jpg");
+    background-image: url("../images/TaskMaster-Homepage.png");
     height: 800px;
     background-position: center;
     /* prevents image repetion. */
